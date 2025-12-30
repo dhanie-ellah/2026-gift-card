@@ -33,8 +33,8 @@ const Home = () => {
     >
       <Nav />
 
-      <main className=" flex flex-col gap-2 items-center">
-        <div className="bg-[url(https://lh3.googleusercontent.com/aida-public/AB6AXuBSgQ4AffZHnaT8RkTIj_tTO6f4jcnzr_o3tIUfYdQ_7AWOOc5fhUr2fpMNK8rhxKbCeiROVpaCOEUPGmusu5Y-56irtfoYXOUJWs3TZbkoa_co8qH7K5_br8dfvb8gkCKeSSu_8uaYLxkyteGkUfJS2AyldgHST6QA-iO0Ns_qjryZaK_xyMuHFLQSaAMaK8rcEdUU4o985iaKQPT8wy3_3EkGJeu4vmPs0r9we6WTMvGdQgNhT50OnSj7z0oQboUmZCe47Rh8Aee1)] h-[200px] w-[35%] rounded-lg bg-cover bg-center shadow-md relative flex items-center justify-center">
+      <main className=" flex flex-col gap-2 items-center w-full m-auto">
+        <div className="bg-[url(https://lh3.googleusercontent.com/aida-public/AB6AXuBSgQ4AffZHnaT8RkTIj_tTO6f4jcnzr_o3tIUfYdQ_7AWOOc5fhUr2fpMNK8rhxKbCeiROVpaCOEUPGmusu5Y-56irtfoYXOUJWs3TZbkoa_co8qH7K5_br8dfvb8gkCKeSSu_8uaYLxkyteGkUfJS2AyldgHST6QA-iO0Ns_qjryZaK_xyMuHFLQSaAMaK8rcEdUU4o985iaKQPT8wy3_3EkGJeu4vmPs0r9we6WTMvGdQgNhT50OnSj7z0oQboUmZCe47Rh8Aee1)] h-[200px] w-[35%] lg:w-[60%] sm:w-[90%] rounded-lg bg-cover bg-center shadow-md relative flex items-center justify-center">
           <div className=" absolute w-full h-full top-0 left-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg text-white">
             <div>
               <p className=" flex items-center justify-center gap-2 bg-white bg-opacity-30 w-fit m-auto rounded-full p-1 px-2 text-xs">
@@ -56,7 +56,7 @@ const Home = () => {
         <form
           className={`${
             isDark ? "bg-surface_dark" : "bg-surface_light"
-          } rounded-lg p-2 px-4 shadow-lg flex items-center justify-between gap-1 text-xs w-[30%]`}
+          } rounded-lg p-2 px-4 shadow-lg flex items-center justify-between gap-1 text-xs w-[30%] lg:w-[60%] sm:w-[90%]`}
           onSubmit={handleOpenGift}
         >
           <label htmlFor="wish">
