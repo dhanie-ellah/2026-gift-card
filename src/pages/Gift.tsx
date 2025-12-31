@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toJpeg } from "html-to-image";
 import { useEffect, useRef, useState } from "react";
+import BG from "../assets/background.jpg"
 
 const Gift = () => {
   const dark = useSelector((state: any) => state.isDark);
@@ -72,7 +73,7 @@ const NEW_YEAR_WISHES = [
     >
       <Nav />
 
-      <main className="p-4 rounded-lg shadow-md w-[40%] lg:w-[60%] sm:w-[90%] h-[25rem] lg:h-[30rem] m-auto bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSgQ4AffZHnaT8RkTIj_tTO6f4jcnzr_o3tIUfYdQ_7AWOOc5fhUr2fpMNK8rhxKbCeiROVpaCOEUPGmusu5Y-56irtfoYXOUJWs3TZbkoa_co8qH7K5_br8dfvb8gkCKeSSu_8uaYLxkyteGkUfJS2AyldgHST6QA-iO0Ns_qjryZaK_xyMuHFLQSaAMaK8rcEdUU4o985iaKQPT8wy3_3EkGJeu4vmPs0r9we6WTMvGdQgNhT50OnSj7z0oQboUmZCe47Rh8Aee1')] bg-cover bg-center relative" ref={giftCardRef} >
+      <main className="p-4 rounded-lg shadow-md w-[40%] lg:w-[60%] sm:w-[90%] h-[25rem] lg:h-[30rem] m-auto bg-cover bg-center relative" ref={giftCardRef} style={{ backgroundImage: `url(${BG})` }} >
         <div className="absolute w-full h-full top-0 left-0 flex flex-col items-center justify-center gap-5 text-xs bg-surface_dark bg-opacity-90 rounded-lg p-4 bg-cover bg-center bg-no-repeat text-white">
           <div className=" flex flex-col gap-4 sm:gap-2 items-center">
             <FontAwesomeIcon
